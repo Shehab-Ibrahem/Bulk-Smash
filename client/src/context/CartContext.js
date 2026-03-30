@@ -45,7 +45,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const totalPrice = cart.reduce((total, item) => total + Number(item.price) * item.quantity, 0);
-  const shippingCost = cart.length === 0 ? 0 : (totalPrice > 350 ? 0 : 25);
+  const shippingCost = cart.length === 0 ? 0 : (totalPrice >= 350 ? 0 : 25);
   const finalTotal = totalPrice + shippingCost;
 
   return (
