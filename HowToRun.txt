@@ -1,0 +1,11 @@
+1- Import the DB in XAMPP.
+2- Open the project with your IDE.
+3- Open a terminal and run the following commands:
+
+cd server
+npx nodemon server.js
+
+4- Open another terminal and run the following commands:
+
+cd client
+npm start
